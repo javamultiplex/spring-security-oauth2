@@ -11,6 +11,7 @@
     <modules>
         <module>products</module>
         <module>providers</module>
+        <module>authorization-server</module>
     </modules>
 
     <properties>
