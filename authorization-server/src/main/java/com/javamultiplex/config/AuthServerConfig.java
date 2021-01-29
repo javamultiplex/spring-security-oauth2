@@ -48,7 +48,10 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
                 .withClient("client3")
                 .secret("secret3")
                 .scopes("read")
-                .authorizedGrantTypes("client_credentials");
+                .authorizedGrantTypes("client_credentials")
+                .and()
+                .withClient("resource-server")
+                .secret("secret");
 
     }
 
